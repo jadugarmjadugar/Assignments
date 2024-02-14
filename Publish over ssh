@@ -1,0 +1,19 @@
+1. Install the plugin Publish over ssh
+2. Go to system and in publish over SSH ----> add a server
+       i) Name:             random name
+      ii) Hostname:         Public IP (You can provide Private IP if both servers are in same subnet)
+     iii) user:             ec2-user (for amazon linux)
+      iv)Remote dir:        path of webapps of apache tomcat
+       v)Key:               Private Key
+  Test should be success
+
+
+
+
+Job -- Frestyle (Send artifacts over ssh)
+1. select server
+2.source file :     target/<package-name>.war
+3.remove prefix:    target/
+
+
+save and check on instance on which tomcat is provided
